@@ -106,7 +106,7 @@ public class NumberCounterGUI extends JFrame {
     }
 
     private ImageIcon loadImage(String ImagePath) {
-        BufferedImage image = null;
+        BufferedImage image;
         try {
             image = ImageIO.read(getClass().getResourceAsStream(ImagePath));
         } catch (IOException e) {
