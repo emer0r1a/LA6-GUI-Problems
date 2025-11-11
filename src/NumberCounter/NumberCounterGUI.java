@@ -24,7 +24,7 @@ public class NumberCounterGUI extends JFrame {
         setResizable(false);
         setLayout(null);
         getContentPane().setBackground(new Color(207, 138, 165));
-        ImageIcon icon = new ImageIcon(loadImage("/resource/NumberCounter/NumberCounter-icon.png").getImage());
+        ImageIcon icon = new ImageIcon(loadImage("/resources/NumberCounter/NumberCounter-icon.png").getImage());
         Image image = icon.getImage();
         setIconImage(image);
 
@@ -40,7 +40,7 @@ public class NumberCounterGUI extends JFrame {
         countLabel = new JLabel("0");
         countLabel.setName("countLabel");
         countLabel.setBounds(60, 205, getWidth() - 132, 105);
-        countLabel.setFont(loadCustomFont("/resource/NumberCounter/m6x11.ttf", 105f));
+        countLabel.setFont(loadCustomFont("/resources/NumberCounter/m6x11.ttf", 105f));
         countLabel.setForeground(new Color(77, 47, 47));
         countLabel.setHorizontalAlignment(SwingConstants.CENTER);
         add(countLabel);
@@ -49,7 +49,7 @@ public class NumberCounterGUI extends JFrame {
         addButtons();
 
         // container
-        JLabel contentPanel = new JLabel(loadImage("/resource/NumberCounter/frame.png"));
+        JLabel contentPanel = new JLabel(loadImage("/resources/NumberCounter/frame.png"));
         contentPanel.setBounds(0, 80, getWidth() - 20, 384);
         add(contentPanel);
 
@@ -61,7 +61,7 @@ public class NumberCounterGUI extends JFrame {
         controlButtons.setOpaque(false);
 
         // decrease
-        ImageIcon icon2 = loadImage("/resource/NumberCounter/decrease.png");
+        ImageIcon icon2 = loadImage("/resources/NumberCounter/decrease.png");
         JButton decreaseButton = new JButton(icon2);
         decreaseButton.setName("decreaseButton");
         decreaseButton.setBorderPainted(false);
@@ -80,7 +80,7 @@ public class NumberCounterGUI extends JFrame {
         controlButtons.add(decreaseButton);
 
         // increase
-        ImageIcon icon1 = loadImage("/resource/NumberCounter/increase.png");
+        ImageIcon icon1 = loadImage("/resources/NumberCounter/increase.png");
         JButton increaseButton = new JButton(icon1);
         increaseButton.setName("increaseButton");
         increaseButton.setBorderPainted(false);

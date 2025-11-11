@@ -32,7 +32,7 @@ public class CalculatorGUI extends JFrame {
         setResizable(false);
         setLayout(null);
         getContentPane().setBackground(new Color(255,232,238));
-        ImageIcon icon = new ImageIcon(loadImage("/resource/Calculator/Calculator-icon.png").getImage());
+        ImageIcon icon = new ImageIcon(loadImage("/resources/Calculator/Calculator-icon.png").getImage());
         Image image = icon.getImage();
         setIconImage(image);
 
@@ -56,7 +56,7 @@ public class CalculatorGUI extends JFrame {
         addResult();
 
         // container
-        JLabel contentPanel = new JLabel(loadImage("/resource/Calculator/container-1.png"));
+        JLabel contentPanel = new JLabel(loadImage("/resources/Calculator/container-1.png"));
         contentPanel.setBounds(0, 0, getWidth()-20, getHeight()-40);
         add(contentPanel);
     }
@@ -76,7 +76,7 @@ public class CalculatorGUI extends JFrame {
         cbOperations.setUI(new BasicComboBoxUI() {
             @Override
             protected JButton createArrowButton() {
-                JButton button = new JButton(new ImageIcon("src/resource/Calculator/arrow.png")); // your image
+                JButton button = new JButton(new ImageIcon("src/resources/Calculator/arrow.png")); // your image
                 button.setBorderPainted(false);
                 button.setContentAreaFilled(false);
                 button.setFocusPainted(false);
@@ -198,7 +198,7 @@ public class CalculatorGUI extends JFrame {
         btns.setOpaque(false);
         btns.setLayout(null);
 
-        ImageIcon icon1 = loadImage("/resource/Calculator/compute-btn.png");
+        ImageIcon icon1 = loadImage("/resources/Calculator/compute-btn.png");
         JButton btnCompute = new JButton(icon1);
         btnCompute.setName("btnCompute");
         btnCompute.setBorderPainted(false);
@@ -241,7 +241,7 @@ public class CalculatorGUI extends JFrame {
         try {
             Font font = Font.createFont(
                     Font.TRUETYPE_FONT,
-                    Objects.requireNonNull(getClass().getResourceAsStream("/resource/Calculator/SmallMemory.ttf"))
+                    Objects.requireNonNull(getClass().getResourceAsStream("/resources/Calculator/SmallMemory.ttf"))
             ).deriveFont(size);
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
             ge.registerFont(font);
