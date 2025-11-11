@@ -1,4 +1,5 @@
 # LA6-GUI-Problems
+_~~designed and created by me~~_
 
 ## Number Counter
 Counter is limited to 9999 to prevent space issues in the display container.
